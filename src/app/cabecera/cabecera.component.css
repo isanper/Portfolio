@@ -1,0 +1,56 @@
+.cabecera{
+    height: 80px;
+}
+.avatar{
+    width:200px;
+    border-radius: 50%;
+    position: relative;
+    top: -20px;
+}
+
+.menu{
+    height: 50px;
+    position: relative;
+    top: 40px;
+}
+
+.iconos{
+    font-size: 40px;
+}
+
+.transparente-btn, .transparente-btn-social{
+    background: transparent;
+    border: none;
+    text-align: center;
+}
+
+.transparente-btn{
+    width: 60px;
+    color: white;
+    text-shadow: -2px 0 #147EDB, 0 2px #147EDB, 2px 0 #147EDB, 0 -2px #147EDB;
+}
+
+.texto-icono{
+    position: relative;
+}
+
+.selected, .transparente-btn:hover{
+    color: white;
+    text-shadow: -2px 0 #DB7114, 0 2px #DB7114, 2px 0 #DB7114, 0 -2px #DB7114;
+}
+
+.fb{
+    color: #3b5998;
+}
+
+.tw{
+    color: #55acee;
+}
+
+.in{
+    color: #007bb5;
+}
+
+.fb:hover, .in:hover, .tw:hover{
+    color: #DB7114;
+}

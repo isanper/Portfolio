@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+  height: 100%;
+}
+  
+body {
+  background-image: url(https://wallpapertag.com/wallpaper/full/8/a/7/129125-large-white-abstract-background-1920x1080-for-retina.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+button:focus {outline:0;}
