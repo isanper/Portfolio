@@ -12,4 +12,7 @@ export class CabeceraComponent implements OnInit {
   ngOnInit() {
   }
 
+  showmenu = false;
+  showsocial = false;
+
 }
