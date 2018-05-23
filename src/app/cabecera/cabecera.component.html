@@ -1,25 +1,33 @@
 <div class="container text-center cabecera">
-  <div class="col-sm-12 menu">
+  <div class="col-12 menu no-margin">
     <div class="row">
-      <div class="col-sm-6 text-left">
-        <button class="transparente-btn hvr-bob">
-          <i class="fa fa-file-text-o iconos selected" aria-hidden="true"></i>
-          <span class="texto-icono selected">CV</span>
+
+      <div class="col-6 text-left no-margin">
+        <button class="show-menu-btn hvr-push" (click)="showmenu=!showmenu">
+          <i class="fa fa-bars" aria-hidden="true" [hidden]="showmenu"></i>
+          <i class="fa fa-times" aria-hidden="true" [hidden]="!showmenu"></i>
         </button>
-        <button class="transparente-btn hvr-bob">
-          <i class="fa fa-file-code-o iconos" aria-hidden="true"></i>
-          <span class="texto-icono">Projects</span>
+        <button class="menu-btn hvr-push cv" [hidden]="!showmenu" data-toggle="tooltip" title="My CV">
+          <i class="fa fa-user" aria-hidden="true"></i>
+        </button>
+        <button class="menu-btn hvr-push project" [hidden]="!showmenu" data-toggle="tooltip" title="My Projects">
+          <i class="fa fa-code" aria-hidden="true"></i>
         </button>
       </div>
-      <div class="col-sm-6 text-right">
-        <button class="transparente-btn-social hvr-bounce-in">
-          <i class="fa fa-facebook-official iconos fb" aria-hidden="true"></i>
+
+      <div class="col-6 text-right no-margin">
+        <button class="social-btn hvr-push fb" [hidden]="!showsocial">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
         </button>
-        <button class="transparente-btn-social hvr-bounce-in">
-          <i class="fa fa-linkedin-square iconos in" aria-hidden="true"></i>
+        <button class="social-btn hvr-push in" [hidden]="!showsocial">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
         </button>
-        <button class="transparente-btn-social hvr-bounce-in">
-          <i class="fa fa-twitter-square iconos tw" aria-hidden="true"></i>
+        <button class="social-btn hvr-push email" [hidden]="!showsocial">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </button>
+        <button class="show-social-btn hvr-push" (click)="showsocial=!showsocial">
+          <i class="fa fa-bars" aria-hidden="true" [hidden]="showsocial"></i>
+          <i class="fa fa-times" aria-hidden="true" [hidden]="!showsocial"></i>
         </button>
       </div>
     </div>

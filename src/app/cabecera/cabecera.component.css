@@ -11,23 +11,44 @@
 .menu{
     height: 50px;
     position: relative;
-    top: 40px;
+    top: 55px;
 }
 
-.iconos{
-    font-size: 40px;
-}
-
-.transparente-btn, .transparente-btn-social{
-    background: transparent;
+.show-social-btn, .show-menu-btn{
     border: none;
+    border-radius: 6px;
     text-align: center;
+    color: white;
+    font-size: 24px;
+    padding: 3px;
+    width: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
-.transparente-btn{
-    width: 60px;
+.show-social-btn{
+    background: #DB7114;
+    -webkit-box-shadow: 0 6px 0 rgb(197, 93, 3);
+    -moz-box-shadow: 0 6px 0 rgb(197, 93, 3);
+    box-shadow: 0 6px 0 rgb(197, 93, 3);
+}
+
+.show-menu-btn{
+    background: #147EDB;
+    -webkit-box-shadow: 0 6px 0 rgb(9, 97, 173);
+    -moz-box-shadow: 0 6px 0 rgb(9, 97, 173);
+    box-shadow: 0 6px 0 rgb(9, 97, 173);
+}
+
+.social-btn, .menu-btn{
+    border: none;
+    border-radius: 6px;
+    text-align: center;
     color: white;
-    text-shadow: -2px 0 #147EDB, 0 2px #147EDB, 2px 0 #147EDB, 0 -2px #147EDB;
+    font-size: 24px;
+    padding: 3px;
+    width: 40px;
+    margin-right: 5px;
 }
 
 .texto-icono{
@@ -40,17 +61,45 @@
 }
 
 .fb{
-    color: #3b5998;
+    background: #3b5998;
+    -webkit-box-shadow: 0 6px 0 #293f63;
+    -moz-box-shadow: 0 6px 0 #293f63;
+    box-shadow: 0 6px 0 #293f63;
 }
 
-.tw{
-    color: #55acee;
+.email{
+    background-color: #40BAA5;
+    -webkit-box-shadow: 0 6px 0 rgb(39, 145, 127);
+    -moz-box-shadow: 0 6px 0 rgb(39, 145, 127);
+    box-shadow: 0 6px 0 rgb(39, 145, 127);
 }
 
 .in{
-    color: #007bb5;
+    background: #007bb5;
+    -webkit-box-shadow: 0 6px 0 #005377;
+    -moz-box-shadow: 0 6px 0 #005377;
+    box-shadow: 0 6px 0 #005377;
 }
 
-.fb:hover, .in:hover, .tw:hover{
+.cv{
+    background-color: #DB7114;
+    -webkit-box-shadow: 0 6px 0 rgb(197, 93, 3);
+    -moz-box-shadow: 0 6px 0 rgb(197, 93, 3);
+    box-shadow: 0 6px 0 rgb(197, 93, 3);
+}
+
+.project{
+    background-color: rgb(219, 223, 20);
+    -webkit-box-shadow: 0 6px 0 rgb(181, 184, 12);
+    -moz-box-shadow: 0 6px 0 rgb(181, 184, 12);
+    box-shadow: 0 6px 0 rgb(181, 184, 12);
+}
+
+.fb:hover, .in:hover, .email:hover{
     color: #DB7114;
+}
+
+.no-margin{
+    margin: 0 !important;
+    padding: 0 !important;
 }

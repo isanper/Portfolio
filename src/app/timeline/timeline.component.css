@@ -32,7 +32,7 @@
 
 .timeline>li:after {
     clear: both;
-    min-height: 170px;
+    min-height: 50px;
 }
 
 .timeline > li .timeline-panel {
@@ -63,11 +63,16 @@
     left: 50%;
     border: 7px solid #3b5998;
     border-radius: 100%;
-    background-color: #3b5998;
     box-shadow: 0 0 5px #4582ec;
     width: 200px;
     height: 200px;
     margin-left: -100px;
+    background: url("https://i.pinimg.com/originals/6e/09/b6/6e09b6303b949bc0231ebbc51d7988f3.jpg") no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #fff;
 }
 
 .timeline>li .timeline-image h4 {
@@ -101,7 +106,6 @@
 }
 
 .timeline .timeline-heading h4 {
-  margin-top:22px;
     margin-bottom: 4px;
     padding:0;
     color: #b3b3b3;
@@ -197,12 +201,16 @@
     left: 0px;
   }
   .timeline>li:nth-child(even) .timeline-image {
-    left: 0;
+    left: 10px;
     margin-left: 0px;
+    width: 175px;
+    height: 175px;
   }
   .timeline>li:nth-child(odd) .timeline-image {
-    left: 520px;
+    left: 490px;
     margin-left: 0px;
+    width: 175px;
+    height: 175px;
   }
   .timeline > li:nth-child(even) .timeline-panel {
     width: 70%;
@@ -222,12 +230,12 @@
 @media only screen and (max-width: 767px) {
   .timeline > li:nth-child(even) {
     margin-bottom: 0px;
-    min-height: 0px;
+    min-height: 375px;
     right: 0px;
   }
   .timeline > li:nth-child(odd) {
     margin-bottom: 0px;
-    min-height: 0px;
+    min-height: 375px;
     left: 0px;
   }
   .timeline>li .timeline-image {
