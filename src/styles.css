@@ -2,6 +2,8 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.css";
 @import "~hover.css/css/hover-min.css";
+@import "~animate.css/animate.min.css";
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
 
 html {
   height: 100%;
@@ -14,6 +16,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
+  font-family: 'Alegreya', serif !important;
 }
 
 button:focus {outline:0;}

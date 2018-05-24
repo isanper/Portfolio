@@ -1,6 +1,9 @@
-.progreso{
-    padding-top: 130px;
-    padding-bottom: 30px;
+.experiencia{
+    padding-bottom: 50px;
+}
+
+.contenido{
+  margin-top: 150px;
 }
 
 .timeline {
@@ -39,7 +42,7 @@
   position: relative;
   float: left;
   width: 41%;
-  padding: 0 20px 20px 30px;
+  padding: 15px 20px 20px 30px;
   text-align: right;
 }
 
@@ -61,18 +64,68 @@
     z-index: 100;
     position: absolute;
     left: 50%;
-    border: 7px solid #3b5998;
     border-radius: 100%;
-    box-shadow: 0 0 5px #4582ec;
     width: 200px;
     height: 200px;
     margin-left: -100px;
-    background: url("https://i.pinimg.com/originals/6e/09/b6/6e09b6303b949bc0231ebbc51d7988f3.jpg") no-repeat;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #fff;
+}
+
+.circle-blue{
+  border: 7px solid #147EDB;
+  box-shadow: 0 0 5px #4582ec;
+}
+
+.circle-orange{
+  border: 7px solid #DB7114;
+  box-shadow: 0 0 5px rgb(245, 131, 32);
+}
+
+.img-redes{
+  background: url("https://elblogdeteidehease.files.wordpress.com/2015/09/asir1.png") no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-color: rgb(221, 221, 221);
+}
+
+.img-diploma{
+  background: url("https://steemitimages.com/DQmXfnUUvmJ5byDkHXBAZvxhzfUEWB949PTegCpRWhw5KLK/graduation%20cap%20and%20diploma.png") no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-color: rgb(221, 221, 221);
+}
+
+.img-montesano{
+  background: url("http://www.guiasbuconnect.es/wp-content/uploads/2016/10/montesano-650x500.png") no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(221, 221, 221);
+}
+
+.img-web{
+  background: url("https://www.solvam.es/wp-content/uploads/2018/04/daw.png") no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(221, 221, 221);
+}
+
+.img-hybridap{
+  background: url("https://www.ispirer.net/images/asp.net.logo.png") no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 99%;
+  background-color: rgb(221, 221, 221);
+}
+
+.img-atos{
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Atos_Origin_2011_logo.svg/2000px-Atos_Origin_2011_logo.svg.png") no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-color: rgb(221, 221, 221);
 }
 
 .timeline>li .timeline-image h4 {
@@ -83,7 +136,7 @@
 
 .timeline>li.timeline-inverted>.timeline-panel {
     float: right;
-    padding: 0 30px 20px 20px;
+    padding: 15px 30px 20px 20px;
     text-align: left;
 }
 
@@ -133,12 +186,13 @@
     left: 575px;
     width: 4px;
     height:250px;
-    background-color: #3b5998;
+    background-color: #147EDB;
     -ms-transform: rotate(-20deg); /* IE 9 */
     -webkit-transform: rotate(-20deg); /* Safari */
     transform: rotate(-20deg);
     box-shadow: 0 0 5px #4582ec;
 }
+
 /*Style for odd div.line*/
 .timeline>li:nth-child(even) .line:before  {
     content: "";
@@ -148,12 +202,20 @@
     left: 515px;
     width: 4px;
     height:250px;
-    background-color: #3b5998;
+    background-color: #DB7114;
     -ms-transform: rotate(20deg); /* IE 9 */
     -webkit-transform: rotate(20deg); /* Safari */
     transform: rotate(20deg);
-    box-shadow: 0 0 5px #4582ec;
+    box-shadow: 0 0 5px rgb(245, 131, 32);
 }
+
+.animated {
+  visibility: visible !important;
+}
+.hide-on-init {
+  visibility: hidden;
+}
+
 /* Medium Devices, .visible-md-* */
 @media (min-width: 992px) and (max-width: 1199px) {
   .timeline > li:nth-child(even) {
@@ -176,13 +238,13 @@
   }
   .timeline > li:nth-child(even) .timeline-panel {
     width: 76%;
-    padding: 0 0 20px 0px;
     text-align: left;
+    padding-top: 25px;
   }
   .timeline > li:nth-child(odd) .timeline-panel {
-    width: 70%;
-    padding: 0 0 20px 0px;
+    width: 74%;
     text-align: right;
+    padding-top: 25px;
   }
   .timeline > li .line {
     display: none;
@@ -230,19 +292,19 @@
 @media only screen and (max-width: 767px) {
   .timeline > li:nth-child(even) {
     margin-bottom: 0px;
-    min-height: 375px;
+    min-height: 400px;
     right: 0px;
   }
   .timeline > li:nth-child(odd) {
     margin-bottom: 0px;
-    min-height: 375px;
+    min-height: 400px;
     left: 0px;
   }
   .timeline>li .timeline-image {
     position: static;
     width: 150px;
     height: 150px;
-    margin-bottom:0px;
+    margin-bottom:5px;
   }
   .timeline>li:nth-child(even) .timeline-image {
     left: 0;

@@ -2,20 +2,24 @@
   <div class="col-12 menu no-margin">
     <div class="row">
 
-      <div class="col-6 text-left no-margin">
+      <div class="col-6 text-left no-margin principal-menu">
         <button class="show-menu-btn hvr-push" (click)="showmenu=!showmenu">
           <i class="fa fa-bars" aria-hidden="true" [hidden]="showmenu"></i>
           <i class="fa fa-times" aria-hidden="true" [hidden]="!showmenu"></i>
         </button>
-        <button class="menu-btn hvr-push cv" [hidden]="!showmenu" data-toggle="tooltip" title="My CV">
+        <button class="menu-btn hvr-push cv" [hidden]="!showmenu" placement="top" ngbTooltip="My CV">
           <i class="fa fa-user" aria-hidden="true"></i>
         </button>
-        <button class="menu-btn hvr-push project" [hidden]="!showmenu" data-toggle="tooltip" title="My Projects">
+        <button class="menu-btn hvr-push project" [hidden]="!showmenu" placement="top" ngbTooltip="My projects">
           <i class="fa fa-code" aria-hidden="true"></i>
         </button>
       </div>
 
-      <div class="col-6 text-right no-margin">
+      <div class="col-6 text-right no-margin social-menu">
+          <button class="show-social-btn hvr-push" (click)="showsocial=!showsocial">
+              <i class="fa fa-bars" aria-hidden="true" [hidden]="showsocial"></i>
+              <i class="fa fa-times" aria-hidden="true" [hidden]="!showsocial"></i>
+            </button>
         <button class="social-btn hvr-push fb" [hidden]="!showsocial">
           <i class="fa fa-facebook" aria-hidden="true"></i>
         </button>
@@ -24,10 +28,6 @@
         </button>
         <button class="social-btn hvr-push email" [hidden]="!showsocial">
           <i class="fa fa-envelope" aria-hidden="true"></i>
-        </button>
-        <button class="show-social-btn hvr-push" (click)="showsocial=!showsocial">
-          <i class="fa fa-bars" aria-hidden="true" [hidden]="showsocial"></i>
-          <i class="fa fa-times" aria-hidden="true" [hidden]="!showsocial"></i>
         </button>
       </div>
     </div>

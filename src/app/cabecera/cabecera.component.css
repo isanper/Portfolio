@@ -103,3 +103,40 @@
     margin: 0 !important;
     padding: 0 !important;
 }
+
+@media (min-width: 768px){
+    .show-social-btn{
+        float: right;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 767px) {
+
+    .social-menu{
+        display: flex !important;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: reverse !important;
+        flex-direction: column !important;
+        align-items: flex-end;
+    }
+
+    .principal-menu{
+        display: flex !important;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+        flex-direction: column !important;
+        align-items: flex-start;
+    }
+
+    .social-btn, .menu-btn{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+
+    .show-social-btn, .show-menu-btn{
+        margin-bottom: 10px;
+    }
+
+}
