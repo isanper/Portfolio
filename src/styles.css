@@ -2,6 +2,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.css";
 @import "~hover.css/css/hover-min.css";
+@import "~aos/dist/aos.css";
 @import "~animate.css/animate.min.css";
 @import url('https://fonts.googleapis.com/css?family=Alegreya');
 
@@ -10,13 +11,21 @@ html {
 }
   
 body {
-  background-image: url(https://wallpapertag.com/wallpaper/full/8/a/7/129125-large-white-abstract-background-1920x1080-for-retina.jpg);
+  /*background-image: url(https://wallpapertag.com/wallpaper/full/8/a/7/129125-large-white-abstract-background-1920x1080-for-retina.jpg);*/
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #464646;
+  background-color: rgb(221, 221, 221);
   font-family: 'Alegreya', serif !important;
 }
 
 button:focus {outline:0;}
+
+*, *:after, *:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}

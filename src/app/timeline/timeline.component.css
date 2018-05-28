@@ -113,7 +113,7 @@
 }
 
 .img-hybridap{
-  background: url("https://www.ispirer.net/images/asp.net.logo.png") no-repeat;
+  background: url("http://www.hybridap.es/Portals/_Default/Skins/Orange/images/logo.png") no-repeat;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 99%;
@@ -177,44 +177,6 @@
     margin-bottom: 0;
     color:#808080;
 }
-/*Style for even div.line*/
-.timeline>li:nth-child(odd) .line:before {
-    content: "";
-    position: absolute;
-    top: 60px;
-    bottom: 0;
-    left: 575px;
-    width: 4px;
-    height:250px;
-    background-color: #147EDB;
-    -ms-transform: rotate(-20deg); /* IE 9 */
-    -webkit-transform: rotate(-20deg); /* Safari */
-    transform: rotate(-20deg);
-    box-shadow: 0 0 5px #4582ec;
-}
-
-/*Style for odd div.line*/
-.timeline>li:nth-child(even) .line:before  {
-    content: "";
-    position: absolute;
-    top: 60px;
-    bottom: 0;
-    left: 515px;
-    width: 4px;
-    height:250px;
-    background-color: #DB7114;
-    -ms-transform: rotate(20deg); /* IE 9 */
-    -webkit-transform: rotate(20deg); /* Safari */
-    transform: rotate(20deg);
-    box-shadow: 0 0 5px rgb(245, 131, 32);
-}
-
-.animated {
-  visibility: visible !important;
-}
-.hide-on-init {
-  visibility: hidden;
-}
 
 /* Medium Devices, .visible-md-* */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -253,12 +215,12 @@
 /* Small Devices, Tablets */
 @media (min-width: 768px) and (max-width: 991px) {
   .timeline > li:nth-child(even) {
-    margin-bottom: 0px;
+    margin-bottom: 50px;
     min-height: 0px;
     right: 0px;
   }
   .timeline > li:nth-child(odd) {
-    margin-bottom: 0px;
+    margin-bottom: 50px;
     min-height: 0px;
     left: 0px;
   }

@@ -7,12 +7,18 @@
           <i class="fa fa-bars" aria-hidden="true" [hidden]="showmenu"></i>
           <i class="fa fa-times" aria-hidden="true" [hidden]="!showmenu"></i>
         </button>
-        <button class="menu-btn hvr-push cv" [hidden]="!showmenu" placement="top" ngbTooltip="My CV">
+        <button id="about" class="menu-btn hvr-push cv" [hidden]="!showmenu" (click)="showDesc('about')">
           <i class="fa fa-user" aria-hidden="true"></i>
         </button>
-        <button class="menu-btn hvr-push project" [hidden]="!showmenu" placement="top" ngbTooltip="My projects">
-          <i class="fa fa-code" aria-hidden="true"></i>
+        <button id="work" class="menu-btn hvr-push work" [hidden]="!showmenu" (click)="showDesc('work')">
+          <i class="fa fa-eye" aria-hidden="true"></i>
         </button>
+        <button id="skills" class="menu-btn hvr-push skills" [hidden]="!showmenu" (click)="showDesc('skills')">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+          </button>
+          <button id="contact" class="menu-btn hvr-push contact" [hidden]="!showmenu" (click)="showDesc('contact')">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </button>
       </div>
 
       <div class="col-6 text-right no-margin social-menu">
@@ -25,9 +31,6 @@
         </button>
         <button class="social-btn hvr-push in" [hidden]="!showsocial">
           <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </button>
-        <button class="social-btn hvr-push email" [hidden]="!showsocial">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
         </button>
       </div>
     </div>
