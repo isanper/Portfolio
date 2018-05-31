@@ -1,39 +1,24 @@
-<div class="container text-center cabecera">
-  <div class="col-12 menu no-margin">
-    <div class="row">
-
-      <div class="col-6 text-left no-margin principal-menu">
-        <button class="show-menu-btn hvr-push" (click)="showmenu=!showmenu">
-          <i class="fa fa-bars" aria-hidden="true" [hidden]="showmenu"></i>
-          <i class="fa fa-times" aria-hidden="true" [hidden]="!showmenu"></i>
-        </button>
-        <button id="about" class="menu-btn hvr-push cv" [hidden]="!showmenu" (click)="showDesc('about')">
-          <i class="fa fa-user" aria-hidden="true"></i>
-        </button>
-        <button id="work" class="menu-btn hvr-push work" [hidden]="!showmenu" (click)="showDesc('work')">
-          <i class="fa fa-eye" aria-hidden="true"></i>
-        </button>
-        <button id="skills" class="menu-btn hvr-push skills" [hidden]="!showmenu" (click)="showDesc('skills')">
-            <i class="fa fa-cogs" aria-hidden="true"></i>
-          </button>
-          <button id="contact" class="menu-btn hvr-push contact" [hidden]="!showmenu" (click)="showDesc('contact')">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-            </button>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+      <a href="/" class="navbar-brand logo"></a>
+      <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse text-center" id="navbar">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item text-center active">
+                  <a id="about" class="nav-link" href="#"><i class="fa fa-user-o"></i></a>
+              </li>
+              <li class="nav-item text-center">
+                  <a id="work" class="nav-link" href="#"><i class="fa fa-eye"></i></a>
+              </li>
+              <li class="nav-item text-center">
+                  <a id="skills" class="nav-link" href="#"><i class="fa fa-cog"></i></a>
+              </li>
+              <li class="nav-item text-center">
+                <a id="contact" class="nav-link" href="#"><i class="fa fa-envelope-o"></i></a>
+            </li>
+          </ul>
       </div>
-
-      <div class="col-6 text-right no-margin social-menu">
-          <button class="show-social-btn hvr-push" (click)="showsocial=!showsocial">
-              <i class="fa fa-bars" aria-hidden="true" [hidden]="showsocial"></i>
-              <i class="fa fa-times" aria-hidden="true" [hidden]="!showsocial"></i>
-            </button>
-        <button class="social-btn hvr-push fb" [hidden]="!showsocial">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-        </button>
-        <button class="social-btn hvr-push in" [hidden]="!showsocial">
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
   </div>
-  <img class="avatar" src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
-</div>
+</nav>

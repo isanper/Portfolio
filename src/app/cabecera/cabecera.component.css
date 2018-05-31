@@ -1,132 +1,51 @@
-.cabecera{
-    height: 80px;
-}
-.avatar{
-    width:200px;
-    border-radius: 50%;
-    position: relative;
-    top: -20px;
+.navbar{
+    background-color: rgba(30,30,30,1);
+    border-bottom: 3px solid rgba(255,255,255,.5);;
 }
 
-.menu{
-    height: 50px;
-    position: relative;
-    top: 55px;
+.logo{
+    background-image: url(http://ww1.prweb.com/prfiles/2014/10/01/12487327/P1-Logo-Color.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 180px;
+    height: 60px;
 }
 
-.show-social-btn, .show-menu-btn{
-    border: none;
-    border-radius: 6px;
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    padding: 3px;
-    width: 40px;
-    margin-right: 5px;
-    margin-left: 5px;
+.nav-link{
+    font-size: 30px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
 }
 
-.show-social-btn{
-    background: #DB7114;
-    -webkit-box-shadow: 0 6px 0 rgb(197, 93, 3);
-    -moz-box-shadow: 0 6px 0 rgb(197, 93, 3);
-    box-shadow: 0 6px 0 rgb(197, 93, 3);
+.navbar-nav{
+    flex-direction: initial !important;
+    display: inline-flex !important;
 }
 
-.show-menu-btn{
-    background: #147EDB;
-    -webkit-box-shadow: 0 6px 0 rgb(9, 97, 173);
-    -moz-box-shadow: 0 6px 0 rgb(9, 97, 173);
-    box-shadow: 0 6px 0 rgb(9, 97, 173);
-}
-
-.social-btn, .menu-btn{
-    border: none;
-    border-radius: 6px;
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    padding: 3px;
-    width: 40px;
-    margin-right: 5px;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-.texto-icono{
-    position: relative;
-}
-
-.selected, .transparente-btn:hover{
-    color: white;
-    text-shadow: -2px 0 #DB7114, 0 2px #DB7114, 2px 0 #DB7114, 0 -2px #DB7114;
-}
-
-.fb{
-    background: #3b5998;
-    -webkit-box-shadow: 0 6px 0 #293f63;
-    -moz-box-shadow: 0 6px 0 #293f63;
-    box-shadow: 0 6px 0 #293f63;
-}
-
-.contact{
-    background-color: #40BAA5;
-    -webkit-box-shadow: 0 6px 0 rgb(39, 145, 127);
-    -moz-box-shadow: 0 6px 0 rgb(39, 145, 127);
-    box-shadow: 0 6px 0 rgb(39, 145, 127);
-}
-
-.in{
-    background: #007bb5;
-    -webkit-box-shadow: 0 6px 0 #005377;
-    -moz-box-shadow: 0 6px 0 #005377;
-    box-shadow: 0 6px 0 #005377;
-}
-
-.cv{
-    background-color: #DB7114;
-    -webkit-box-shadow: 0 6px 0 rgb(197, 93, 3);
-    -moz-box-shadow: 0 6px 0 rgb(197, 93, 3);
-    box-shadow: 0 6px 0 rgb(197, 93, 3);
-}
-
-.work{
-    background-color: rgb(219, 223, 20);
-    -webkit-box-shadow: 0 6px 0 rgb(181, 184, 12);
-    -moz-box-shadow: 0 6px 0 rgb(181, 184, 12);
-    box-shadow: 0 6px 0 rgb(181, 184, 12);
-}
-
-.skills{
-    background-color: rgb(223, 20, 20);
-    -webkit-box-shadow: 0 6px 0 rgb(156, 13, 13);
-    -moz-box-shadow: 0 6px 0 rgb(156, 13, 13);
-    box-shadow: 0 6px 0 rgb(156, 13, 13);
-}
-
-.no-margin{
-    margin: 0 !important;
-    padding: 0 !important;
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, 
+.navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: #a7e249 !important;
 }
 
 #about:after, #work:after, #skills:after, #contact:after{
-    position: absolute;
-    bottom: -2px;
+    position: relative;
+    bottom: 5px;
     display: block;
-    text-align: center;
     opacity: 0;
-    color: #fff;
-    font-size: 11px;
+    color: #a7e249;
+    font-size: 12px;
 }
-#about:hover:after, #work:hover:after, #skills:hover:after, #contact:hover:after {
+#about:hover:after, #work:hover:after, #skills:hover:after, #contact:hover:after, #about:focus:after, #work:focus:after, #skills:focus:after, #contact:focus:after {
     opacity: 1;
-    -webkit-transition: all 0.6s ease-in;
-    transition: all 0.6s ease-in;
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
 }
 #about:after{
     content: "ABOUT";
+    left: -2px;
 }
 #work:after{
     content: "WORK";
@@ -138,62 +57,6 @@
     content: "CONTACT";
 }
 
-@media (min-width: 768px){
-    .show-social-btn{
-        float: right;
-    }
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 767px) {
-
-    .social-menu{
-        display: flex !important;
-        -webkit-box-orient: vertical !important;
-        -webkit-box-direction: reverse !important;
-        flex-direction: column !important;
-        align-items: flex-end;
-        z-index: 1;
-    }
-
-    .principal-menu{
-        display: flex !important;
-        -webkit-box-orient: vertical !important;
-        -webkit-box-direction: normal !important;
-        flex-direction: column !important;
-        align-items: flex-start;
-        z-index: 1;
-    }
-
-    .social-btn, .menu-btn{
-        margin-top: 5px;
-        margin-bottom: 5px;
-        margin-left: 5px;
-    }
-
-    .show-social-btn, .show-menu-btn{
-        margin-bottom: 10px;
-    }
-
-    #about:focus, #work:focus, #skills:focus, #contact:focus{
-        width: 150px;
-        text-align: left;
-        padding-left: 10px;
-        -webkit-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
-    }
-
-    #about:after, #work:after, #skills:after, #contact:after{
-        bottom: 5px;
-        left: 45px;
-        font-size: 20px;
-    }
-
-    #about:focus:after, #work:focus:after, #skills:focus:after, #contact:focus:after {
-        opacity: 1;
-        -webkit-transition: all 0.6s ease-in;
-        transition: all 0.6s ease-in;
-        -webkit-transition-delay: 0.2s;
-        transition-delay: 0.2s;
-    }
+.active a:after{
+    opacity: 1 !important;
 }
