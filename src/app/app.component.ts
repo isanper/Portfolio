@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as AOS from 'aos';
 import {
   trigger,
   state,
@@ -52,7 +51,6 @@ import {
 export class AppComponent {
 
   ngOnInit(){
-    AOS.init();
   }
 
   // change the animation state

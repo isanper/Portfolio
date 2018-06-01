@@ -6,7 +6,8 @@ import { AboutComponent } from './about/about.component';
 
 export const routes: Routes = [
   { path: 'about', component: AboutComponent, data: { page: 'about' } },
-  { path: 'work', component: TimelineComponent, data: { page: 'work' } }
+  { path: 'work', component: TimelineComponent, data: { page: 'work' } },
+  { path: '**', redirectTo: 'about' }
 ];
 
 @NgModule({
