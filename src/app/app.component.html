@@ -1,1 +1,4 @@
-<app-home></app-home>
+<app-cabecera></app-cabecera>
+<div class="main" [@animRoutes]="getPage(appOutlet)">
+    <router-outlet #appOutlet="outlet"></router-outlet>
+  </div>

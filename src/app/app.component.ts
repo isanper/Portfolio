@@ -1,15 +1,63 @@
 import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  query
+} from '@angular/animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  animations: [
+    trigger('animRoutes', [
+      transition('* <=> *', [
+        // Initial state of new route
+        query(':enter',
+          style({
+            position: 'fixed',
+            width:'100%',
+            transform: 'translateX(-100%)'
+          }),
+          {optional:true}),
+
+        // move page off screen right on leave
+        query(':leave',
+          animate('500ms ease',
+            style({
+              position: 'fixed',
+              width:'100%',
+              transform: 'translateX(100%)'
+            })
+          ),
+        {optional:true}),
+
+        // move page in screen from left to right
+        query(':enter',
+          animate('500ms ease',
+            style({
+              opacity: 1,
+              transform: 'translateX(0%)'
+            })
+          ),
+        {optional:true}),
+      ])
+    ])
+  ]
 })
 export class AppComponent {
 
-  public ngOnInit(){
+  ngOnInit(){
     AOS.init();
+  }
+
+  // change the animation state
+  getPage(outlet) {
+    return outlet.activatedRouteData['page'] || 'about';
   }
   
 }

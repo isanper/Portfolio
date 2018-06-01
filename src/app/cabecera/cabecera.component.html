@@ -1,24 +1,34 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-      <a href="/" class="navbar-brand logo"></a>
-      <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse text-center" id="navbar">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item text-center active">
-                  <a id="about" class="nav-link" href="#" data-toggle="collapse" data-target="#navbar"><i class="fa fa-user-o"></i></a>
-              </li>
-              <li class="nav-item text-center">
-                  <a id="work" class="nav-link" href="#"><i class="fa fa-eye"></i></a>
-              </li>
-              <li class="nav-item text-center">
-                  <a id="skills" class="nav-link" href="#"><i class="fa fa-cog"></i></a>
-              </li>
-              <li class="nav-item text-center">
-                <a id="contact" class="nav-link" href="#"><i class="fa fa-envelope-o"></i></a>
-            </li>
-          </ul>
-      </div>
-  </div>
+    <div class="container">
+        <a href="/" class="navbar-brand logo"></a>
+        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbar">
+            <span> </span>
+            <span> </span>
+            <span> </span>
+        </button>
+        <div class="navbar-collapse collapse text-center" id="navbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item text-center" routerLinkActive="active">
+                    <a id="about" class="nav-link" data-toggle="collapse" routerLink="about">
+                        <i class="fa fa-user-o"></i>
+                    </a>
+                </li>
+                <li class="nav-item text-center" routerLinkActive="active">
+                    <a id="work" class="nav-link" routerLink="work" data-toggle="collapse">
+                        <i class="fa fa-eye"></i>
+                    </a>
+                </li>
+                <li class="nav-item text-center" routerLinkActive="active">
+                    <a id="skills" class="nav-link" routerLink="skills">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                </li>
+                <li class="nav-item text-center" routerLinkActive="active">
+                    <a id="contact" class="nav-link" routerLink="contact">
+                        <i class="fa fa-envelope-o"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
