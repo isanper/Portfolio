@@ -88,6 +88,10 @@ li {
     color: white;
 }
 
+.descripcion-corta{
+    display: none;
+}
+
   /* Custom, iPhone Retina */
 @media only screen and (max-width: 767px) {
     .about-me{
@@ -102,10 +106,19 @@ li {
     }
 
     .descripcion{
-        padding-top: 80px;
+        padding-top: 30vh;
     }
 
     .descripcion h2{
         font-size: 29px;
     }
+
+    .descripcion-corta{
+        display: block;
+    }
+
+    .descripcion-larga{
+        display: none;
+    }
+    
 }
