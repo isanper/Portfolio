@@ -5,7 +5,8 @@ import {
   style,
   animate,
   transition,
-  query
+  query,
+  keyframes
 } from '@angular/animations';
 
 @Component({
@@ -20,24 +21,23 @@ import {
           style({
             position: 'fixed',
             width:'100%',
-            transform: 'translateX(-100%)'
+            height: '100%',
+            transform: 'translateX(-100%)',
           }),
           {optional:true}),
 
         // move page off screen right on leave
         query(':leave',
-          animate('500ms ease',
-            style({
-              position: 'fixed',
-              width:'100%',
-              transform: 'translateX(100%)'
-            })
-          ),
+          animate('200ms ease-in', keyframes([
+            style({opacity: 0, transform: 'translateX(25%)'}),
+            style({opacity: 0.5, transform: 'translateX(75%)'}),
+            style({opacity: 1, transform: 'translateX(100%)'})
+          ])),
         {optional:true}),
 
         // move page in screen from left to right
         query(':enter',
-          animate('500ms ease',
+          animate('200ms ease-in',
             style({
               opacity: 1,
               transform: 'translateX(0%)'

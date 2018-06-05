@@ -8,22 +8,27 @@
         </button>
         <div class="navbar-collapse collapse text-center" id="navbar">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item text-center" routerLinkActive="active">
-                    <a id="about" class="nav-link" data-toggle="collapse" routerLink="about">
+                <li class="nav-item text-center" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a id="about" class="nav-link" routerLink="about">
                         <i class="fa fa-user-o"></i>
                     </a>
                 </li>
-                <li class="nav-item text-center" routerLinkActive="active">
-                    <a id="work" class="nav-link" routerLink="work" data-toggle="collapse">
+                <li class="nav-item text-center" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a id="experience" class="nav-link" routerLink="experience">
+                        <i class="fa fa-graduation-cap"></i>
+                    </a>
+                </li>
+                <li class="nav-item text-center" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a id="skills" class="nav-link" routerLink="skills">
                         <i class="fa fa-eye"></i>
                     </a>
                 </li>
-                <li class="nav-item text-center" routerLinkActive="active">
-                    <a id="skills" class="nav-link" routerLink="skills">
-                        <i class="fa fa-cog"></i>
+                <li class="nav-item text-center" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a id="work" class="nav-link" routerLink="work">
+                        <i class="fa fa-briefcase"></i>
                     </a>
                 </li>
-                <li class="nav-item text-center" routerLinkActive="active">
+                <li class="nav-item text-center" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show">
                     <a id="contact" class="nav-link" routerLink="contact">
                         <i class="fa fa-envelope-o"></i>
                     </a>

@@ -22,8 +22,16 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: rgb(221, 221, 221);
+  background-color: rgba(30,30,30,1);
   font-family: 'Alegreya', serif !important;
+}
+
+span {
+  white-space: pre-wrap !important;
+}
+
+.letter{
+  display: inline-block;
 }
 
 button:focus {outline:0;}

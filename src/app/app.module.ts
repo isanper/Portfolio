@@ -4,6 +4,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -11,6 +12,7 @@ import { CabeceraComponent } from './cabecera/cabecera.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { AppRoutingModule } from './app-routing.module';
     HomeComponent,
     CabeceraComponent,
     TimelineComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     AppRoutingModule,
@@ -26,7 +29,10 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserAnimationsModule,
     AngularFontAwesomeModule,
     NgbModule.forRoot(),
-    AnimateOnScrollModule.forRoot()
+    AnimateOnScrollModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAjkJoVhHOIGjBZoLEecu7RFJImElva_Dk'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

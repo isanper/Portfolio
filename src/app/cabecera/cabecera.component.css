@@ -28,7 +28,7 @@
     color: #a7e249 !important;
 }
 
-#about:after, #work:after, #skills:after, #contact:after{
+#about:after, #experience:after, #work:after, #skills:after, #contact:after{
     position: relative;
     bottom: 5px;
     display: block;
@@ -36,16 +36,18 @@
     color: #a7e249;
     font-size: 12px;
 }
-#about:hover:after, #work:hover:after, #skills:hover:after, #contact:hover:after, #about:focus:after, #work:focus:after, #skills:focus:after, #contact:focus:after {
+#about:hover:after, #experience:hover:after, #work:hover:after, #skills:hover:after, #contact:hover:after, 
+#about:focus:after, #experience:focus:after, #work:focus:after, #skills:focus:after, #contact:focus:after {
     opacity: 1;
     -webkit-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
-    -webkit-transition-delay: 0.1s;
-    transition-delay: 0.1s;
 }
 #about:after{
     content: "ABOUT";
     left: -2px;
+}
+#experience:after{
+    content: "CV";
 }
 #work:after{
     content: "WORK";

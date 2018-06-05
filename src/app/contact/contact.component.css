@@ -1,0 +1,46 @@
+.contact{
+    height: 100%;
+}
+
+.contact-form{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.contact h1{
+    color: #a7e249;
+}
+
+.btn-send{
+    background: transparent;
+    border: 1px solid #a7e249;
+    color: #a7e249;
+}
+
+.btn-send:hover{
+    background: #a7e249;
+    color: rgba(30,30,30,1);
+}
+
+.map{
+    padding: 0 !important;
+}
+
+agm-map {
+    height: 100%;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 767px) {
+    .map{
+        height: 100%;
+        padding: 15px !important;
+    }
+
+    .contact-me{
+        height: 100%;
+    }
+}
