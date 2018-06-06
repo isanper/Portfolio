@@ -7,11 +7,20 @@
     background-image: url(https://vignette.wikia.nocookie.net/thefutureofeuropes/images/6/64/Random_logo_i_was_bored_designing_by_shadow3vi1-d5difqb.png/revision/latest?cb=20151022213109);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 180px;
+    background-size: contain;
+    width: 60px;
     height: 60px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
 }
-
+.logo:hover{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
 .nav-link{
     font-size: 30px;
     padding-left: 10px !important;
@@ -35,9 +44,10 @@
     opacity: 0;
     color: #a7e249;
     font-size: 12px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
-#about:hover:after, #experience:hover:after, #work:hover:after, #skills:hover:after, #contact:hover:after, 
-#about:focus:after, #experience:focus:after, #work:focus:after, #skills:focus:after, #contact:focus:after {
+#about:hover:after, #experience:hover:after, #work:hover:after, #skills:hover:after, #contact:hover:after, .logo:hover:after, 
+#about:focus:after, #experience:focus:after, #work:focus:after, #skills:focus:after, #contact:focus:after, .logo:focus:after {
     opacity: 1;
     -webkit-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
@@ -57,6 +67,23 @@
 }
 #contact:after{
     content: "CONTACT";
+}
+
+.logo:after{
+    content:"ISP";
+    position: relative;
+    bottom: 1px;
+    display: block;
+    opacity: 0;
+    color: #a7e249;
+    font-size: 35px;
+    left: 65px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.logo:hover:after, .logo:focus:after {
+    opacity: 1;
+    -webkit-transition: all 1s ease-in;
+    transition: all 1s ease-in;
 }
 
 .active a:after{

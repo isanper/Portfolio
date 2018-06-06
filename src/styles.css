@@ -9,6 +9,7 @@
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:700);
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
 
 html, body {
   height: 100%;
@@ -22,7 +23,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(30,30,30,1);
-  font-family: 'Alegreya', serif !important;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 span {

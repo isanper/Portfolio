@@ -21,11 +21,11 @@
 
 h1{
     color: #a7e249;
+    font-size: 1.8rem;
 }
 
 h3{
     color: #fff;
-    font-family: Ubuntu, sans-serif;
     text-shadow: 1px 0 0 #a7e249, 
                 -1px 0 0 #a7e249, 
                 0 1px 0 #a7e249, 
@@ -118,7 +118,7 @@ li {
     }
 
     .descripcion h1{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     .descripcion-corta{
